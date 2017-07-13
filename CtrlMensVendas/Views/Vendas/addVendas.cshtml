@@ -1,0 +1,16 @@
+﻿<div class="row" ng-controller="GesCtrl">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Endereço</th>
+        </tr>
+        <tbody ng-repeat="cli in lstClientes">
+            <tr>
+                <td>{{cli.IDCLI}}</td>
+                <td>{{cli.NOMECLI}}</td>
+                <td>{{cli.ENDERECOCLI}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

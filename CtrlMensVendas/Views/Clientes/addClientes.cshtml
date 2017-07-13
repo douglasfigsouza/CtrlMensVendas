@@ -1,0 +1,32 @@
+﻿@model CtrlMensVendas.Models.CLIENTES
+
+<div class="row">
+    <div class="col-md-12">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            {
+                <fieldset>
+                    <legend>@ViewBag.Title</legend>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            @Html.LabelFor(c => c.NOMECLI, new { @class = "control-label col-md-12" })
+                            @Html.TextBoxFor(c => c.NOMECLI, new { @class = "form-control col-md-12" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            @Html.LabelFor(c => c.ENDERECOCLI, new { @class = "control-label col-md-12" })
+                            @Html.TextBoxFor(c => c.ENDERECOCLI, new { @class = "form-control col-md-12" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary col-md-6">Cadastrar</button>
+                        </div>
+                    </div>
+                </fieldset>
+            }
+        }
+    </div>
+</div>
